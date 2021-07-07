@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_weight="0.15"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_file" />
+
+    <TextView
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:textSize="22sp"
+        android:id="@+id/TeacherFileName"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center|start"
+        android:text="Name of File"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_weight="0.15"
+        android:layout_width="0dp"
+        android:clickable="true"
+        android:id="@+id/TeacherFileDeleteButton"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+</LinearLayout>

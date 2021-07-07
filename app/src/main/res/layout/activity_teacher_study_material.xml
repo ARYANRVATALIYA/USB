@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/Teacher_StudyMaterial_Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="SEM :"
+            android:textColor="#fafafa"
+            android:textSize="22sp" />
+
+
+        <Spinner
+            android:id="@+id/Teacher_StudeyMaterial_Sem_SelectionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+
+        <Button
+            android:id="@+id/Teacher_StudyMaterial_Upload_Button"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Upload"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Teacher_StudyMaterial_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Teacher_StudyMaterial_Container" />
+
+
+</RelativeLayout>

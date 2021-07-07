@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unistudentbridge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/usb_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/usb_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StudentAttendanceList"/>
+        <activity android:name=".TeacherTimeTable" />
+        <activity android:name=".TeacherPanel" />
+        <activity android:name=".TeacherNotice" />
+        <activity android:name=".TeacherDepartmentChat" />
+        <activity android:name=".Teacher_StudyMaterial" />
+        <activity android:name=".Teacher_Attendance" />
+        <activity android:name=".StudentTimeTable" />
+        <activity android:name=".StudentPanel" />
+        <activity android:name=".StudentNotice" />
+        <activity android:name=".StudentDepartmentChat" />
+        <activity android:name=".Student_StudyMaterial" />
+        <activity android:name=".Student_Attendance" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".DashboardAdmin" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AdminAccountShower" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

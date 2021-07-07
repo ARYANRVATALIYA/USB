@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/Teacher_Attendance_Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/Dept_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Department :"
+            android:textColor="#fafafa"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/Teacher_Attendance_Dep_SelectionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Dept_Text"
+            android:layout_marginTop="10dp" />
+
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:id="@+id/Teacher_Attendance_Show_Button"
+            android:layout_height="wrap_content"
+            android:text="show\nattendance"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/Teacher_Attendance_Dep_SelectionSpinner"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Sem_Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sem :"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/Teacher_Attendance_Container"/>
+
+    <Spinner
+        android:id="@+id/Sem_Select_Spinner"
+        android:layout_width="110dp"
+        android:layout_toEndOf="@id/Sem_Select"
+        android:layout_alignBottom="@+id/Sem_Select"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Teacher_Attendance_Container"/>
+
+    <TextView
+        android:id="@+id/Sub_Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub :"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@+id/Sem_Select_Spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/Teacher_Attendance_Container"/>
+
+    <Spinner
+        android:id="@+id/Sub_Select_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/Sub_Select"
+        android:layout_alignBottom="@+id/Sub_Select"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Teacher_Attendance_Container"/>
+
+
+    <ListView
+        android:id="@+id/AttendanceList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Sem_Select"
+        android:layout_above="@id/AttendanceSaveButton"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:id="@+id/AttendanceSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="SAVE" />
+
+</RelativeLayout>

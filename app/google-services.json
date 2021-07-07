@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1083098324310",
+    "firebase_url": "https://clean-facility-284803.firebaseio.com",
+    "project_id": "clean-facility-284803",
+    "storage_bucket": "clean-facility-284803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083098324310:android:18c6fd10420456c515caf7",
+        "android_client_info": {
+          "package_name": "com.example.unistudentbridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083098324310-icq790oka6d8u5k5ti8u4pq41697odqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.unistudentbridge",
+            "certificate_hash": "8a3470ded377c91171a0f8f1db4a54a4d6ac3232"
+          }
+        },
+        {
+          "client_id": "1083098324310-7hqblg0p8iii30hi0gvmu2aku50aa6cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU9v1J5np2WkhBU239JLk6O1CA6nrZbuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083098324310-7hqblg0p8iii30hi0gvmu2aku50aa6cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

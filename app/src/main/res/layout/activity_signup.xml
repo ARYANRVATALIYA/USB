@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/SignupHeading"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Signup to App"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <RadioGroup
+        android:id="@+id/SignupSelection"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/SignupHeading"
+        android:background="@android:color/background_light"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <RadioButton
+            android:id="@+id/Student_Signup_Selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Student"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Teacher_Signup_Selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Faculty"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_below="@+id/SignupSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SignupSelectionContainer"
+        android:background="@drawable/bluebackground"
+        android:orientation="vertical"/>
+
+
+</RelativeLayout>
